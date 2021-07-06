@@ -1,0 +1,98 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+body {
+  padding-top: 56px;
+  background: url("fondo.jpg") no-repeat;
+}
+
+.navbar {
+  font-family: 'Dela Gothic One', sans-serif;
+}
+
+.container{
+
+}
+
+.container0{
+  height: 458px;
+  width: 540px;
+}
+
+.container1{
+  height: 244px;
+  width: 413px;
+}
+
+.container2{
+  height: 461px;
+  width: 524px;
+}
+
+.container3{
+  height: 374px;
+  width: 496px;
+}
+
+
+.carousel-item {
+  height: 30vh;
+  min-height: 240px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 70px;
+  width: 70px;
+  outline: none;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after{
+  content: '?';
+  font-size: 20px;
+}
+
+.carousel-control-prev-icon:after{
+  content: '¿';
+  font-size: 20px;
+}
+
+h1, h2 {
+  margin-bottom: 30px;
+  font-family: 'Dela Gothic One', serif;
+  color: #FFFFFF;
+}
+
+h3, h4, h5 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+}
+
+h4 a {
+  color: #e891ec;
+}
+
+p {
+  line-height: 1.6;
+  text-justify: auto;
+  font-family: 'Karla', sans-serif;
+  font-weight: 300;
+}
+
+footer {
+  color: #FFB6C0;
+  padding-top:2rem;
+  font-size: 90%;
+}
