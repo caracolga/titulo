@@ -59,50 +59,68 @@
   <!-- Page Content -->
 
   <!-- Page Heading/Breadcrumbs -->
-  <h2 class="mb-3 text-center">nombre proyecto</h2>
-    <!-- parallax de vistas -->
+
+  <!-- parallax de vistas -->
+  <article class="container-fluid">
     <div id="container0" class="container">
-      <div class="row">
+      <div class="row justify-content-between">
         <!-- habitaciones -->
+        <div class="">
         <div id="scene0" class="scene">
-          <div data-depth="1.00"><img src="fotos/capas/capa0-07.png"></div>
-          <div data-depth="0.60"><img src="fotos/capas/capa1-07.png"></div>
-          <div data-depth="0.40"><img src="fotos/capas/capa2-07.png"></div>
-          <div data-depth="0.80"><img src="fotos/capas/capa3-07.png"></div>
+          <div data-depth="0.80"><img src="fotos/capas/capa0-07.png"></div>
+          <div data-depth="0.40"><img src="fotos/capas/capa1-07.png"></div>
+          <div data-depth="0.20"><img src="fotos/capas/capa2-07.png"></div>
+          <div data-depth="0.60"><img src="fotos/capas/capa3-07.png"></div>
+        </div>
         </div>
         <!-- living/comedor -->
+        <div class="">
         <div id="scene1" class="scene">
-          <div data-depth="1.00"><img src="fotos/capas/capa0-09.png"></div>
-          <div data-depth="0.60"><img src="fotos/capas/capa1-09.png"></div>
-          <div data-depth="0.40"><img src="fotos/capas/capa2-09.png"></div>
-          <div data-depth="0.80"><img src="fotos/capas/capa3-09.png"></div>
+          <div data-depth="0.80"><img src="fotos/capas/capa0-09.png"></div>
+          <div data-depth="0.40"><img src="fotos/capas/capa1-09.png"></div>
+          <div data-depth="0.20"><img src="fotos/capas/capa2-09.png"></div>
+          <div data-depth="0.60"><img src="fotos/capas/capa3-09.png"></div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container1" class="container">
+      <div class="row justify-content-center">
+        <!-- cocina -->
+        <div id="scene2" class="scene">
+          <div data-depth="1.00"><img src="fotos/capas/capa0-11.png"></div>
+          <div data-depth="0.60"><img src="fotos/capas/capa1-11.png"></div>
+          <div data-depth="0.40"><img src="fotos/capas/capa2-11.png"></div>
+          <div data-depth="0.80"><img src="fotos/capas/capa3-11.png"></div>
         </div>
       </div>
     </div>
 
     <div id="container2" class="container">
-      <div class="row">
+      <div class="row justify-content-center">
         <!-- baños -->
-        <div id="scene2" class="scene">
-          <div data-depth="1.00"><img src="fotos/capas/capa0-08.png"></div>
-          <div data-depth="0.60"><img src="fotos/capas/capa1-08.png"></div>
-          <div data-depth="0.40"><img src="fotos/capas/capa2-08.png"></div>
-          <div data-depth="0.80"><img src="fotos/capas/capa3-08.png"></div>
+        <div id="scene3" class="scene">
+          <div data-depth="0.80"><img src="fotos/capas/capa0-08.png"></div>
+          <div data-depth="0.40"><img src="fotos/capas/capa1-08.png"></div>
+          <div data-depth="0.20"><img src="fotos/capas/capa2-08.png"></div>
+          <div data-depth="0.60"><img src="fotos/capas/capa3-08.png"></div>
         </div>
         <!-- patio/balcón -->
-        <div id="scene3" class="scene">
-          <div data-depth="1.00"><img src="fotos/capas/capa0-10.png"></div>
-          <div data-depth="0.60"><img src="fotos/capas/capa1-10.png"></div>
-          <div data-depth="0.40"><img src="fotos/capas/capa2-10.png"></div>
-          <div data-depth="0.80"><img src="fotos/capas/capa3-10.png"></div>
+        <div id="scene4" class="scene">
+          <div data-depth="0.80"><img src="fotos/capas/capa0-10.png"></div>
+          <div data-depth="0.40"><img src="fotos/capas/capa1-10.png"></div>
+          <div data-depth="0.20"><img src="fotos/capas/capa2-10.png"></div>
+          <div data-depth="0.60"><img src="fotos/capas/capa3-10.png"></div>
         </div>
       </div>
    </div>
+  </article>
 
    <!-- maquetita -->
    <div class="container-fluid">
      <div class="row">
-       <img style="width:100%;" src="maqueta.png"></img>
+       <img src="maqueta.png" href="cocina.html" style="width:100%;"></img>
      </div>
    </div>
   <!-- Footer -->
@@ -117,6 +135,8 @@
       var scene = document.getElementById('scene2');
       var parallax = new Parallax(scene);
       var scene = document.getElementById('scene3');
+      var parallax = new Parallax(scene);
+      var scene = document.getElementById('scene4');
       var parallax = new Parallax(scene);
   </script>
 
