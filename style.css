@@ -6,39 +6,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-body {
-  padding-top: 56px;
-  background: url("fondo.jpg") no-repeat;
+html, body {
+  padding-top: 30px;
+  width: 1920px;
+  height: 1080px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #202020;
+  background-size: cover;
 }
 
 .navbar {
   font-family: 'Dela Gothic One', sans-serif;
 }
 
-.container{
-
-}
-
-.container0{
-  height: 458px;
-  width: 540px;
-}
-
 .container1{
-  height: 244px;
-  width: 413px;
+  height: 30vh;
+  min-height: 240px;
 }
 
-.container2{
-  height: 461px;
-  width: 524px;
+.scene{
+  size: 10%;
+  float: auto;
 }
-
-.container3{
-  height: 374px;
-  width: 496px;
-}
-
 
 .carousel-item {
   height: 30vh;
