@@ -8,10 +8,8 @@
 
 html, body {
   padding-top: 30px;
-  width: 1920px;
-  height: 1080px;
-  max-width: 100%;
-  max-height: 100%;
+  width: 100%;
+  max-height: 480px;
   background-color: #202020;
   background-size: cover;
 }
@@ -20,14 +18,67 @@ html, body {
   font-family: 'Dela Gothic One', sans-serif;
 }
 
-.container1{
-  height: 30vh;
-  min-height: 240px;
+img {
+  height: 100%;
+  width: 100%;
 }
 
-.scene{
-  size: 10%;
-  float: auto;
+.cover {
+  object-fit: cover;
+}
+
+.contain {
+  object-fit: contain;
+}
+
+#scene {
+  width: 271px;
+  height: 230px;
+}
+
+#scene0 {
+  max-width: 542px;
+  max-height: 460px;
+}
+
+#scene1 {
+  max-width: 526px;
+  max-height: 462px;
+}
+
+#scene2 {
+  max-width: 779px;
+  max-height: 734px;
+}
+
+#scene3 {
+  max-width: 414px;
+  max-height: 246px;
+}
+
+#scene4 {
+  max-width: 498px;
+  max-height: 375px;
+}
+
+.scene0 {
+  width: 542px;
+  height: 460px;
+}
+
+.scene1 {
+  width: 271px;
+  height: 230px;
+}
+
+.habitacion0 {
+  width: 542px;
+  height: 460px;
+}
+
+.habitacion00 {
+  width: 271px;
+  height: 230px;
 }
 
 .carousel-item {
