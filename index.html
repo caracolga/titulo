@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
   <!-- COMMON TAGS -->
@@ -38,7 +38,6 @@
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent">
     <div class="container">
@@ -58,12 +57,22 @@
 
   <!-- Page Content -->
 
-  <!-- Page Heading/Breadcrumbs -->
-
   <!-- parallax de vistas -->
   <!-- no logro fijar/manipular el tamaño y lugar que ocupan en la página -->
-  <article class="container-fluid">
-    <div id="container" class="container-fluid">
+  <main>
+  <div class="container-fluid">
+
+    <div id="container" class="container-fluid center">
+        <!-- cocina -->
+        <div id="scene4" class="scene mx-auto" style="width: 30%;">
+          <div data-depth="1.00"><img src="fotos/capas/capa0-11.png" class="contain"></div>
+          <div data-depth="0.60"><img src="fotos/capas/capa1-11.png" class="contain"></div>
+          <div data-depth="0.40"><img src="fotos/capas/capa2-11.png" class="contain"></div>
+          <div data-depth="0.80"><img src="fotos/capas/capa3-11.png" class="contain"></div>
+        </div>
+    </div>
+
+    <div id="container" class="container">
       <div class="row justify-content-between px-5">
         <!-- habitaciones -->
           <div id="scene0" class="scene col-3 justify-left">
@@ -83,45 +92,26 @@
     </div>
 
     <div id="container" class="container">
-      <div class="row justify-content-center">
-        <!-- cocina -->
-        <div id="scene2" class="scene" style="width: 35%;">
-          <div data-depth="1.00"><img src="fotos/capas/capa0-11.png" class="contain"></div>
-          <div data-depth="0.60"><img src="fotos/capas/capa1-11.png" class="contain"></div>
-          <div data-depth="0.40"><img src="fotos/capas/capa2-11.png" class="contain"></div>
-          <div data-depth="0.80"><img src="fotos/capas/capa3-11.png" class="contain"></div>
-        </div>
-      </div>
-    </div>
-
-    <div id="container" class="container">
-      <div class="row justify-content-between px-5">
+      <div class="row align-items-end justify-content-between px-5">
         <!-- baños -->
-        <div id="scene3" class="scene col-3 justify-left">
+        <div id="scene2" class="scene col-3 justify-left">
           <div data-depth="0.80"><img src="fotos/capas/capa0-08.png" class="contain"></div>
           <div data-depth="0.40"><img src="fotos/capas/capa1-08.png" class="contain"></div>
           <div data-depth="0.20"><img src="fotos/capas/capa2-08.png" class="contain"></div>
           <div data-depth="0.60"><img src="fotos/capas/capa3-08.png" class="contain"></div>
         </div>
         <!-- patio/balcón -->
-        <div id="scene4" class="scene col-3 justify-right">
+        <div id="scene3" class="scene col-3 justify-right">
           <div data-depth="0.80"><img src="fotos/capas/capa0-10.png" class="contain"></div>
           <div data-depth="0.40"><img src="fotos/capas/capa1-10.png" class="contain"></div>
           <div data-depth="0.20"><img src="fotos/capas/capa2-10.png" class="contain"></div>
           <div data-depth="0.60"><img src="fotos/capas/capa3-10.png" class="contain"></div>
         </div>
       </div>
-   </div>
-  </article>
+    </div>
 
-   <!-- maquetita, EJEMPLO DE COMO SE DEBERÍA VER más o menos -->
-   <div class="container-fluid">
-     <div class="row">
-       <img src="maqueta.png" style="width:100%;" href="cocina.html"></img>
-     </div>
-   </div>
-  <!-- Footer -->
-  <footer class="container">  </footer>
+  </div>
+  </main>
 
   <!-- Parallex JavaScript -->
   <script>
