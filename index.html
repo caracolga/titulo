@@ -59,12 +59,11 @@
 
   <!-- parallax de vistas -->
   <!-- no logro fijar/manipular el tamaño y lugar que ocupan en la página -->
-  <main>
-  <div class="container-fluid">
+  <main class="container-main">
 
-    <div id="container" class="container-fluid center">
-        <!-- cocina -->
-        <div id="scene4" class="scene mx-auto" style="width: 30%;">
+    <!-- cocina -->
+    <div class="container-fullheight center px-5">
+        <div id="scene4" class="scene mx-auto">
           <div data-depth="1.00"><img src="fotos/capas/capa0-11.png" class="contain"></div>
           <div data-depth="0.60"><img src="fotos/capas/capa1-11.png" class="contain"></div>
           <div data-depth="0.40"><img src="fotos/capas/capa2-11.png" class="contain"></div>
@@ -72,8 +71,10 @@
         </div>
     </div>
 
-    <div id="container" class="container">
+    <!-- otras piezas -->
+    <div class="container-fullheight">
       <div class="row justify-content-between px-5">
+
         <!-- habitaciones -->
           <div id="scene0" class="scene col-3 justify-left">
             <div data-depth="0.80"><img src="fotos/capas/capa0-07.png" class="contain"></div>
@@ -81,6 +82,7 @@
             <div data-depth="0.20"><img src="fotos/capas/capa2-07.png" class="contain"></div>
             <div data-depth="0.60"><img src="fotos/capas/capa3-07.png" class="contain"></div>
           </div>
+
         <!-- living/comedor -->
           <div id="scene1" class="scene col-3 justify-right">
             <div data-depth="0.80"><img src="fotos/capas/capa0-09.png" class="contain"></div>
@@ -88,11 +90,11 @@
             <div data-depth="0.20"><img src="fotos/capas/capa2-09.png" class="contain"></div>
             <div data-depth="0.60"><img src="fotos/capas/capa3-09.png" class="contain"></div>
           </div>
-      </div>
-    </div>
 
-    <div id="container" class="container">
-      <div class="row align-items-end justify-content-between px-5">
+      </div>
+
+      <div class="row justify-content-between align-content-end px-5">
+
         <!-- baños -->
         <div id="scene2" class="scene col-3 justify-left">
           <div data-depth="0.80"><img src="fotos/capas/capa0-08.png" class="contain"></div>
@@ -100,6 +102,7 @@
           <div data-depth="0.20"><img src="fotos/capas/capa2-08.png" class="contain"></div>
           <div data-depth="0.60"><img src="fotos/capas/capa3-08.png" class="contain"></div>
         </div>
+
         <!-- patio/balcón -->
         <div id="scene3" class="scene col-3 justify-right">
           <div data-depth="0.80"><img src="fotos/capas/capa0-10.png" class="contain"></div>
@@ -107,10 +110,10 @@
           <div data-depth="0.20"><img src="fotos/capas/capa2-10.png" class="contain"></div>
           <div data-depth="0.60"><img src="fotos/capas/capa3-10.png" class="contain"></div>
         </div>
+
       </div>
     </div>
 
-  </div>
   </main>
 
   <!-- Parallex JavaScript -->
