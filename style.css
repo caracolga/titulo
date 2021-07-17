@@ -19,6 +19,7 @@ body {
   position: relative;
   background-color: #202020;
   background-size: cover;
+  overflow: hidden;
 }
 
 .navbar {
@@ -28,6 +29,18 @@ body {
 img {
   height: 100%;
   width: 100%;
+}
+
+.container-main {
+  height: 100%;
+  width: 100%;
+  position: static;
+}
+
+.container-fullheight {
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
 }
 
 .cover {
@@ -45,67 +58,13 @@ img {
   text-align: center;
 }
 
-.container-main {
-  height: 100%;
-  width: 100%;
-  position: static;
-}
-
-.container-fullheight {
-  height: 100%;
-  width: 100%;
-  display: block;
-}
-
-
-#scene {
-  width: 271px;
-  height: 230px;
-}
-
-#scene0 {
-  max-width: 542px;
-  max-height: 460px;
-}
-
-#scene1 {
-  max-width: 526px;
-  max-height: 462px;
-}
-
-#scene2 {
-  max-width: 779px;
-  max-height: 734px;
-}
-
-#scene3 {
-  max-width: 414px;
-  max-height: 246px;
-}
-
 #scene4 {
-  max-width: 498px;
-  max-height: 375px;
-}
-
-.scene0 {
-  width: 542px;
-  height: 460px;
-}
-
-.scene1 {
-  width: 271px;
-  height: 230px;
-}
-
-.habitacion0 {
-  width: 542px;
-  height: 460px;
-}
-
-.habitacion00 {
-  width: 271px;
-  height: 230px;
+  max-height: 50%;
+  max-width: 50%;
+  padding: 50%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .carousel-item {
