@@ -59,22 +59,22 @@
 
   <!-- parallax de vistas -->
   <!-- no logro fijar/manipular el tamaño y lugar que ocupan en la página -->
-  <main class="container-main">
+  <figure class="container-main">
 
-    <!-- cocina -->
-    <div class="container-fullheight center px-5">
-        <div id="scene4" class="scene4 mx-auto" style="width: 50%; top: 5%; width: 100%;">
-          <div data-depth="1.00"><img src="fotos/capas/capa0-11.png" class="contain"></div>
-          <div data-depth="0.60"><img src="fotos/capas/capa1-11.png" class="contain"></div>
-          <div data-depth="0.40"><img src="fotos/capas/capa2-11.png" class="contain"></div>
-          <div data-depth="0.80"><img src="fotos/capas/capa3-11.png" class="contain"></div>
-        </div>
-    </div>
+      <!-- cocina -->
+      <div class="container-fullheight center">
+          <div id="scene4" class="scene4 mx-auto pt-3" style="width: 45%; top: 5%;" href="cocina.html">
+            <div data-depth="0.70"><img src="fotos/capas/capa1-11.png" class="contain" href="cocina.html"></div>
+            <div data-depth="0.90"><img src="fotos/capas/capa2-11.png" class="contain" href="cocina.html"></div>
+            <div data-depth="0.90"><img src="fotos/capas/capa3-11.png" class="contain" href="cocina.html"></div>
+            <div data-depth="1.10"><img src="fotos/capas/capa4-11.png" class="contain" href="cocina.html"></div>
+          </div>
+      </div>
 
     <!-- otras piezas -->
     <div class="container-fullheight">
 
-      <div class="row justify-content-between px-5">
+      <div class="row justify-content-between px-5 pt-2">
           <!-- habitaciones -->
           <div id="scene0" class="scene0" style="width: 25%;">
             <div data-depth="0.80"><img src="fotos/capas/capa0-07.png" class="contain"></div>
@@ -111,7 +111,7 @@
       </div>
     </div>
 
-  </main>
+  </figure>
 
   <!-- Parallex JavaScript -->
   <script>

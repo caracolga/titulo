@@ -25,24 +25,28 @@
   <meta name="og:type" content="website">
   <meta name="og:image" content="favicon.png">
 
+  <!-- parallax javascript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+  <link rel="stylesheet" href="https://d33wubrfki0l68.cloudfront.net/css/5c1028e715f36a2955d470ae75a6e01449902f16/css/main.css">
 
   <!-- Custom styles for this template -->
-  <link href="style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" style="text/css">
 
 </head>
 
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-transparent fixed-top">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-transparent fixed-top">
     <div class="container">
       <a class="navbar-brand" href="index.html">nombre proyecto</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
             <a class="nav-link" href="about.html">sobre el proyecto</a>
@@ -58,21 +62,22 @@
   <!-- corazón -->
     <!-- primera fila -->
     <figure class="figure row justify-content-md-center">
-      <div id="carousel1" class="carousel slide col-md-4 mb-4" data-ride="carousel">
+
+      <div id="carousel1" class="carousel slide col-md-4 mb-1" data-ride="carousel">
       <ol class="carousel-indicators">
           <li data-target="#carousel1" data-slide-to="0" class="active"></li>
           <li data-target="#carousel1" data-slide-to="1"></li>
           <li data-target="#carousel1" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/hervidor3.jpg" alt="hervidor perspectiva"> </img>
+        <div class="carousel-item active" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/hervidor3.jpg" alt="hervidor perspectiva"> </img>
         </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/olla3.jpg" alt="olla perspectiva">
+        <div class="carousel-item" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/olla3.jpg" alt="olla perspectiva">
         </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/verduras3.jpg" alt="verduras perspectiva">
+        <div class="carousel-item" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/verduras3.jpg" alt="verduras perspectiva">
         </div>
       </div>
        <a class="carousel-control-prev" href="#carousel1" role="button" data-slide="prev">
@@ -85,21 +90,21 @@
        </a>
       </div>
 
-      <div id="carousel2" class="carousel slide col-md-4 mb-4" data-ride="carousel">
+      <div id="carousel2" class="carousel slide col-md-4 mb-1" data-ride="carousel">
       <ol class="carousel-indicators">
           <li data-target="#carousel2" data-slide-to="0" class="active"></li>
           <li data-target="#carousel2" data-slide-to="1"></li>
           <li data-target="#carousel2" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/lavadora2.jpg" alt="lavadora perspectiva">
+        <div class="carousel-item active" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/lavadora2.jpg" alt="lavadora perspectiva">
         </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/despensa2.jpg" alt="despensa frontal">
+        <div class="carousel-item" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/despensa2.jpg" alt="despensa frontal">
         </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/limpieza2.jpg" alt="lavamanos satelital">
+        <div class="carousel-item" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/limpieza2.jpg" alt="lavamanos satelital">
         </div>
       </div>
        <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
@@ -122,14 +127,14 @@
           <li data-target="#carousel3" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/lavadora2.jpg" alt="lavadora perspectiva">
+        <div class="carousel-item active" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/lavadora2.jpg" alt="lavadora perspectiva">
         </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/despensa2.jpg" alt="despensa frontal">
+        <div class="carousel-item" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/despensa2.jpg" alt="despensa frontal">
         </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/limpieza2.jpg" alt="lavamanos satelital">
+        <div class="carousel-item" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/limpieza2.jpg" alt="lavamanos satelital">
         </div>
       </div>
        <a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
@@ -149,14 +154,14 @@
           <li data-target="#carousel4" data-slide-to="2"></li>
       </ol>
       <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/hervidor3.jpg" alt="hervidor perspectiva">
+        <div class="carousel-item active" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/hervidor3.jpg" alt="hervidor perspectiva">
         </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/olla3.jpg" alt="olla perspectiva">
+        <div class="carousel-item" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/olla3.jpg" alt="olla perspectiva">
         </div>
-        <div class="carousel-item" data-bs-interval="10000">
-          <img class="d-block w-100" src="fotos/verduras3.jpg" alt="verduras perspectiva">
+        <div class="carousel-item" data-bs-interval="false">
+          <img class="d-block contain" src="fotos/verduras3.jpg" alt="verduras perspectiva">
         </div>
       </div>
        <a class="carousel-control-prev" href="#carousel4" role="button" data-slide="prev">
@@ -171,14 +176,19 @@
     </figure>
   </div>
 
+  <!-- maquetita, EJEMPLO DE COMO SE DEBERÍA VER más o menos -->
+  <div class="container-fluid">
+    <div class="row">
+      <a href="cocina.html">
+        <img src="maqueta.png" style="width:100%;" href="cocina.html"></img>
+      </a>
+    </div>
+  </div>
+
   <!-- Footer -->
   <footer> </footer>
 
   <!-- js audio -->
-  <script>
-    var audio = document.getElementById("audio");
-    audio.volume = 0.4;
-  </script>
 
   <!-- Bootstrap core JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

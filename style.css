@@ -40,7 +40,6 @@ img {
 .container-fullheight {
   height: 100%;
   width: 100%;
-  flex-direction: row;
 }
 
 .cover {
@@ -61,6 +60,8 @@ img {
 #scene4 {
   max-height: 50%;
   max-width: 50%;
+  z-index: 999999999999999999999999;
+  content: url(href="cocina.html");
 }
 
 .carousel-item {
