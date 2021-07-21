@@ -58,10 +58,10 @@ img {
 }
 
 #scene4 {
-  max-height: 50%;
-  max-width: 50%;
+  max-height: 100%;
+  max-width: 100%;
   z-index: 999999999999999999999999;
-  content: url(href="cocina.html");
+  background: url("cocina.html") inline-block;
 }
 
 .carousel-item {
