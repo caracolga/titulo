@@ -28,6 +28,9 @@
   <!-- parallax javascript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 
+  <!-- jquery javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
   <link rel="stylesheet" href="https://d33wubrfki0l68.cloudfront.net/css/5c1028e715f36a2955d470ae75a6e01449902f16/css/main.css">
@@ -63,7 +66,7 @@
     <!-- primera fila -->
     <figure class="figure row justify-content-md-center pt-1">
 
-      <div id="carousel1" class="carousel slide col-md-4 mb-4" data-ride="carousel" data-interval="false">
+      <div id="carousel1" class="carousel slide col-md-4 mb-4">
       <ol class="carousel-indicators">
           <li data-target="#carousel1" data-slide-to="0" class="active"></li>
           <li data-target="#carousel1" data-slide-to="1"></li>
@@ -90,7 +93,7 @@
        </a>
       </div>
 
-      <div id="carousel2" class="carousel slide col-md-4 mb-4" data-ride="carousel" data-interval="false">
+      <div id="carousel2" class="carousel slide col-md-4 mb-4">
       <ol class="carousel-indicators">
           <li data-target="#carousel2" data-slide-to="0" class="active"></li>
           <li data-target="#carousel2" data-slide-to="1"></li>
@@ -121,7 +124,7 @@
     <!-- segunda fila -->
     <figure class="figure row justify-content-md-center pt-3">
 
-      <div id="carousel3" class="carousel slide col-md-4 mb-2" data-ride="carousel" data-interval="false">
+      <div id="carousel3" class="carousel slide col-md-4 mb-2">
       <ol class="carousel-indicators">
           <li data-target="#carousel3" data-slide-to="0" class="active"></li>
           <li data-target="#carousel3" data-slide-to="1"></li>
@@ -148,7 +151,7 @@
        </a>
       </div>
 
-      <div id="carousel4" class="carousel slide col-md-4 mb-2" data-ride="carousel" data-interval="false">
+      <div id="carousel4" class="carousel slide col-md-4 mb-2">
       <ol class="carousel-indicators">
           <li data-target="#carousel4" data-slide-to="0" class="active"></li>
           <li data-target="#carousel4" data-slide-to="1"></li>
@@ -177,6 +180,24 @@
     </figure>
   </div>
 
+  <!-- js carousel hoverplay -->
+  <script type="text/javascript">
+
+    $(document).ready(function(){
+
+      $("#carousel1,#carousel2,#carousel3,#carousel4").carousel({
+        interval: 1000,
+        pause: true
+      });
+
+      $('#carousel1,#carousel2,#carousel3,#carousel4').hover(function(){
+         $(this).carousel('cycle');
+      },function(){
+         $(this).carousel('pause');
+      });
+    });
+
+  </script>
   <!-- js audio -->
 
   <!-- Bootstrap core JavaScript -->
