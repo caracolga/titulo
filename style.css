@@ -84,16 +84,6 @@ img {
   background-image: none;
 }
 
-.carousel-control-next-icon:after{
-  content: '?';
-  font-size: 20px;
-}
-
-.carousel-control-prev-icon:after{
-  content: '¿';
-  font-size: 20px;
-}
-
 h1, h2 {
   margin-bottom: 30px;
   font-family: 'Dela Gothic One', serif;
