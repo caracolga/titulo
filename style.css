@@ -24,6 +24,7 @@ body {
 
 .navbar {
   font-family: 'Dela Gothic One', sans-serif;
+  z-index: 10;
 }
 
 img {
@@ -34,7 +35,7 @@ img {
 .container-main {
   height: 100%;
   width: 100%;
-  position: static;
+  position: absolute;
 }
 
 .container-fullheight {
@@ -57,10 +58,53 @@ img {
   text-align: center;
 }
 
+.button-enter {
+  background-color: transparent;
+  color: rgba(210, 0, 0, 1);
+  border-color: rgba(210, 0, 0, 1);
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-enter:hover {
+  background-color: rgba(210,0,0,1);
+  color: black;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+}
+
+#enterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999999999999;
+    background-color: rgba(0,0,0,1);
+}
+
+#enterContainer p {
+  text-justify: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: rgba(210, 210, 210, 1);
+}
+
+#enterContainer h2 {
+  font-family: 'Dela Gothic One', serif;
+  color: #FFFFFF;
+}
+
 #scene4 {
   max-height: 100%;
   max-width: 100%;
-  z-index: 999999999999999999999999;
+  z-index: 10000;
   background: url("cocina.html") inline-block;
 }
 
