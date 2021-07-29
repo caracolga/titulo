@@ -136,23 +136,39 @@ div .scene {
   position: relative;
   width: 25%;
   z-index: 99999999;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   -webkit-filter: blur(0px) grayscale(0%);
-  -moz-filter: blur(0px) grayscale(0%);
-  -o-filter: blur(0px) grayscale(0%);
-  -ms-filter: blur(0px) grayscale(0%);
   filter: blur(0px) grayscale(0%);
+  transition-duration: 0.2s;
   opacity: 1;
-  transition-duration: 0.3s;
 }
 
 div .scene:hover {
   -webkit-filter: blur(1px) grayscale(90%);
-  -moz-filter: blur(1px) grayscale(90%);
-  -o-filter: blur(1px) grayscale(90%);
-  -ms-filter: blur(1px) grayscale(90%);
   filter: blur(1px) grayscale(90%);
-  opacity: 0.7;
+  opacity: 0.9;
+}
+
+div .scene-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 999999999999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Dela Gothic One', serif;
+  color: white;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+div .scene-overlay:hover {
+  opacity: 1;
 }
 
 div .scene5 {
@@ -210,9 +226,10 @@ h4 a {
 
 p {
   line-height: 1.6;
-  text-justify: auto;
+  text-justify: left;
   font-family: 'Karla', sans-serif;
-  font-weight: 300;
+  font-weight: 400;
+  color: white;
 }
 
 footer {
