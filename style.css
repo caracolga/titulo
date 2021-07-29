@@ -22,6 +22,36 @@ body {
   overflow: hidden;
 }
 
+#enterContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    flex-direction: column;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999999999999;
+    background-color: rgba(0,0,0,1);
+}
+
+#enterContainer p {
+  text-justify: center;
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  color: rgba(210, 210, 210, 1);
+}
+
+#enterContainer h2 {
+  font-family: 'Dela Gothic One', serif;
+  color: #FFFFFF;
+}
+
+#parallax {
+
+}
+
 .bg-image {
   content: "";
   height: 100vh;
@@ -59,27 +89,15 @@ img {
 .container-fullheight {
   height: 100%;
   width: 100%;
+  position: absolute;
 }
 
 .container-fullheight-2 {
-  height: 100%;
-  width: 100%;
-  z-index: 99999999999999;
-}
-
-.cover {
-  object-fit: cover;
-}
-
-.contain {
-  object-fit: contain;
-}
-
-.center {
+  height: 100vh;
   position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
 }
 
 .button-enter {
@@ -99,40 +117,50 @@ img {
   font-weight: 500;
 }
 
-#enterContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    flex-direction: column;
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
-    z-index: 999999999999999;
-    background-color: rgba(0,0,0,1);
+.cover {
+  object-fit: cover;
 }
 
-#enterContainer p {
-  text-justify: center;
-  font-family: 'Karla', sans-serif;
-  font-weight: 400;
-  color: rgba(210, 210, 210, 1);
+.contain {
+  object-fit: contain;
 }
 
-#enterContainer h2 {
-  font-family: 'Dela Gothic One', serif;
-  color: #FFFFFF;
+.center {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-#scene4 {
-  max-height: 100%;
-  max-width: 100%;
-  z-index: 10000;
-  background: url("cocina.html") inline-block;
+div .scene {
+  position: relative;
+  width: 25%;
+  z-index: 99999999;
+  display: block;
+  -webkit-filter: blur(0px) grayscale(0%);
+  -moz-filter: blur(0px) grayscale(0%);
+  -o-filter: blur(0px) grayscale(0%);
+  -ms-filter: blur(0px) grayscale(0%);
+  filter: blur(0px) grayscale(0%);
+  opacity: 1;
+  transition-duration: 0.3s;
 }
 
-#parallax {
+div .scene:hover {
+  -webkit-filter: blur(1px) grayscale(90%);
+  -moz-filter: blur(1px) grayscale(90%);
+  -o-filter: blur(1px) grayscale(90%);
+  -ms-filter: blur(1px) grayscale(90%);
+  filter: blur(1px) grayscale(90%);
+  opacity: 0.7;
+}
+
+div .scene5 {
+  margin: 0;
+  width: 45%;
+}
+
+div .scene5:hover {
 
 }
 
@@ -159,12 +187,21 @@ img {
 h1, h2 {
   margin-bottom: 30px;
   font-family: 'Dela Gothic One', serif;
-  color: #FFFFFF;
+  color: white;
 }
 
-h3, h4, h5 {
+h3 {
+  display: inline;
+  font-family: 'Dela Gothic One', serif;
+  font-size: 90%;
+  text-justify: center;
+  color: rgba(210,0,0,1);
+}
+
+h4, h5 {
   font-family: 'Karla', sans-serif;
-  font-weight: 500;
+  font-weight: 300;
+  color: white;
 }
 
 h4 a {
