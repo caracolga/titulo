@@ -17,7 +17,7 @@ body {
   padding-top: 50px;
   display: block;
   position: relative;
-  background-color: #202020;
+  background-color: #000000;
   background-size: cover;
   overflow: hidden;
 }
@@ -132,52 +132,69 @@ img {
   text-align: center;
 }
 
-div .scene {
+.scene {
   position: relative;
   width: 25%;
   z-index: 99999999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  -webkit-filter: blur(0px) grayscale(0%);
-  filter: blur(0px) grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
   transition-duration: 0.2s;
   opacity: 1;
 }
 
-div .scene:hover {
-  -webkit-filter: blur(1px) grayscale(90%);
-  filter: blur(1px) grayscale(90%);
+.scene:hover {
+  -webkit-filter: grayscale(90%);
+  filter: grayscale(90%);
   opacity: 0.9;
 }
 
-div .scene-overlay {
-  position: absolute;
+.scene-center {
   height: 100%;
   width: 100%;
-  z-index: 999999999999999999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-family: 'Dela Gothic One', serif;
-  color: white;
-  opacity: 0;
-  transition: 0.2s;
+  z-index: 9999999999999;
 }
 
-div .scene-overlay:hover {
+.scene-name {
+  opacity: 0.01;
+  transition: 0.3s;
+  pointer-events: auto;
+}
+
+.scene-name:hover{
   opacity: 1;
 }
 
 div .scene5 {
   margin: 0;
   width: 45%;
+  -ms-transform: scale(2);
+  transform: scale(1);
 }
 
 div .scene5:hover {
+  -ms-transform: scale(2);
+  transform: scale(2);
+}
 
+.scene-name-5 {
+  margin: 0;
+  position: absolute;
+  z-index: 9999999999999999;
+  top: 45%;
+  left: 45%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-family: 'Dela Gothic One', serif;
+  background-color: rgba(210,0,0,1);
+  border-color: rgba(210,0,0,1);
+  color: #FFFFFF;
+  opacity: 0.01;
+  transition: 0.3s;
+  pointer-events: auto;
+}
+
+.scene-name-5:hover{
+  opacity: 1;
 }
 
 .carousel-item {
