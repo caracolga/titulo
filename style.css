@@ -202,17 +202,38 @@ img {
   background-image: none;
 }
 
-h1, h2 {
-  margin-bottom: 30px;
+h1 {
   font-family: 'Dela Gothic One', serif;
   color: white;
 }
 
+h2 {
+  margin-top: -10px;
+  font-family: 'Dela Gothic One', serif;
+  font-size: 80%;
+  color: white;
+}
+
+h2-1 {
+  font-family: 'Dela Gothic One', serif;
+  font-size: 70%;
+  color: white;
+  opacity: 0.5;
+  transition-duration: 0.3s;
+}
+
+h2-1:hover {
+  opacity: 1;
+  color: rgba(210,0,0,1);
+}
+
 h3 {
   display: inline;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   font-family: 'Dela Gothic One', serif;
   font-size: 90%;
-  text-justify: center;
   color: rgba(210,0,0,1);
 }
 
