@@ -145,13 +145,7 @@ img {
 .scene:hover {
   -webkit-filter: grayscale(90%);
   filter: grayscale(90%);
-  opacity: 0.9;
-}
-
-.scene-center {
-  height: 100%;
-  width: 100%;
-  z-index: 9999999999999;
+  opacity: 0.6;
 }
 
 .scene-name {
@@ -164,37 +158,28 @@ img {
   opacity: 1;
 }
 
-div .scene5 {
+.scene-cocina {
   margin: 0;
   width: 45%;
-  -ms-transform: scale(2);
-  transform: scale(1);
+  bottom: 5%;
 }
 
-div .scene5:hover {
-  -ms-transform: scale(2);
-  transform: scale(2);
-}
-
-.scene-name-5 {
-  margin: 0;
-  position: absolute;
-  z-index: 9999999999999999;
-  top: 45%;
-  left: 45%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  font-family: 'Dela Gothic One', serif;
-  background-color: rgba(210,0,0,1);
-  border-color: rgba(210,0,0,1);
-  color: #FFFFFF;
-  opacity: 0.01;
-  transition: 0.3s;
+.scene-scale {
+  -webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+  transition: 0.5s ease-in-out;
   pointer-events: auto;
 }
 
-.scene-name-5:hover{
-  opacity: 1;
+.scene-scale:hover {
+  -webkit-transform: scale(1.03);
+	-moz-transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	-o-transform: scale(1.03);
+	transform: scale(1.03);
 }
 
 .carousel-item {
